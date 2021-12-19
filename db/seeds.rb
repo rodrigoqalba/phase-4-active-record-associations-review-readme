@@ -1,3 +1,5 @@
+puts "seeding data"
+
 author1 = Author.create(name: "Leeroy Jenkins")
 author2 = Author.create(name: Faker::Name.unique.name)
 author3 = Author.create(name: Faker::Name.unique.name)
@@ -23,3 +25,5 @@ PostTag.create(post_id: post3.id, tag_id: tag2.id)
 
 PostTag.create(post_id: post4.id, tag_id: tag2.id)
 PostTag.create(post_id: post4.id, tag_id: tag3.id)
+
+puts "done seeding"
